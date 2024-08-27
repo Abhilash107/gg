@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <style>
+        
+
+    </style>
+</head>
+<body>
+
+   <div class="container">
+
+    <button onclick="show()" style="margin: 0 50% 0 50%; " class="btn">Show</button>
+   </div>
+
+    <div class="iframe-container" style="display: none;">
+        <div class="iframe-wrapper">
+            <iframe src="https://heyzine.com/flip-book/8e8bedcd5e.html" width="100%" height="600px"></iframe>
+            <div class="iframe-title ">Spring</div>
+        </div>
+        <div class="iframe-wrapper">
+            <iframe src="https://heyzine.com/flip-book/d3ba0af3a6.html" width="100%" height="600px"></iframe>
+            <div class="iframe-title">Monsoon</div>
+        </div>
+        <div class="iframe-wrapper">
+            <iframe src="https://heyzine.com/flip-book/d31fdd98cb.html" width="100%" height="600px"></iframe>
+            <div class="iframe-title">Autumn</div>
+        </div>
+    </div>
+
+    <script>
+       
+
+        function show(){
+            const getBtn = document.querySelector('.btn')
+            const getDiv = document.querySelector('.iframe-container')
+
+            if(getDiv.style.display==="none"){
+                getDiv.style.display="block"
+                getBtn.textContent="Hide"
+            }
+
+            else {
+                getDiv.style.display = "none";
+                getBtn.textContent = "Show";
+            }      
+        }
+
+    </script>
+</body>
+</html>
